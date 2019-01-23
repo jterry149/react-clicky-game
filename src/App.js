@@ -1,28 +1,39 @@
+// Required imports for application
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Card from './components/Card';
+import Wrapper from './components/Wrapper';
+import Header from './components/Header';
+import cards from "./cards.json";
 import './App.css';
 
 class App extends Component {
-  render() {
+  
+  
+  
+  
+  // Counts the clicks and tracks the score of the game by card objects ide
+  clickCount = id => 
+  {
+    
+  }
+  // Map and render a cards components for each card object
+  render() 
+  {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Wrapper>
+        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        {this.state.cards.map(card => (
+          <Card 
+            clickCount={this.clickCount}
+            id={card.id}
+            key={card.id}
+            image={card.image}
+          />
+        ))}
+      </Wrapper>
     );
   }
 }
 
+// Export the App
 export default App;
