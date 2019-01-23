@@ -1,0 +1,31 @@
+/*= Card style attributes =*/
+.card {
+    background: #ffffff;
+    border-radius: 2px;
+    height: 250px;
+    margin: 16px;
+    position: relative;
+    width: 325px;
+    text-align: left;
+    box-shadow: 0 3px 6px #666666, 0 3px 6px #666666;
+}
+
+/*= Card Image Container Styling attributes =*/
+.card > .img-container {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: #ff0000;
+}
+
+/*= Card Image Width =*/
+.card > .img-container > img {
+    width: 60%;
+}
+
+/*= Cards content styling attributes =*/
+.card > .content {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+}
