@@ -1,0 +1,19 @@
+/*= Header styling attributes =*/
+.header 
+{
+    width: 100%;
+    font-size: 30px;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+/*= Title styling attributes =*/
+.title 
+{
+    float: left;
+}
+
+/*= Scores styling sttributes =*/ 
+.scores {
+    float: right; 
+}
