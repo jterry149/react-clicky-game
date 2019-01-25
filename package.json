@@ -11,8 +11,7 @@
   },
   "scripts": {
     "start": "react-scriptsgit  start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "react-clicky-game -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
