@@ -5,7 +5,7 @@ import Wrapper from './components/Wrapper';
 import Header from './components/Header';
 //import Navbar from "./components/Navbar";
 import cards from "./cards.json";
-import './App.css';
+
 
 class App extends Component {
   // Setting the this.cards.state according to the cards json objects in the application
